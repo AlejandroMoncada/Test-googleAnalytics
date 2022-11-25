@@ -1,17 +1,7 @@
-//useAnalyticsEventTracker.jsx
-
-import React from "react";
-import ReactGA from "react-ga";
-
+//ContactUs.jsx
+import useAnalyticsEventTracker from './UseAnalyticsEventTracker'
 
 export const ContactUs = () => {
-  const useAnalyticsEventTracker = (category="Blog category") => {
-    const eventTracker = (action = "test action", label = "test label") => {
-      ReactGA.event({category, action, label});
-    }
-    return eventTracker;
-  }
-  
   const gaEventTracker = useAnalyticsEventTracker('Contact us');
   return(
   <div>
