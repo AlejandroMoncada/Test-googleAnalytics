@@ -1,6 +1,6 @@
 import './App.css'
-import ReactGA from 'react-ga'
 import {ContactUs} from './ContactUs'
+import ReactGA from 'react-ga4'
 
 
 function App() {
